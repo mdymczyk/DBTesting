@@ -1,5 +1,6 @@
 package com.dymczyk.orientdb;
 
+import com.dymczyk.TestData;
 import com.google.common.base.Stopwatch;
 import com.orientechnologies.orient.core.config.OGlobalConfiguration;
 import com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx;
