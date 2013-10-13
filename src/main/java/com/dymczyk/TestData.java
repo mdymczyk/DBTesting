@@ -1,5 +1,6 @@
 package com.dymczyk;
 
+import java.io.InputStream;
 import java.net.URL;
 import java.nio.file.Paths;
 
@@ -25,7 +26,7 @@ public class TestData {
     return Paths.get("").toAbsolutePath().toString();
   }
 
-  public static URL getResource(String name) {
-    return Thread.currentThread().getContextClassLoader().getResource(name);
+  public static InputStream getResource(String name) {
+    return Thread.currentThread().getContextClassLoader().getResourceAsStream(name);
   }
 }

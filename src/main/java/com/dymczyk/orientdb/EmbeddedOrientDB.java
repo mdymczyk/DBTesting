@@ -19,7 +19,7 @@ public class EmbeddedOrientDB {
     try {
       // Start the server
       server = OServerMain.create();
-      server.startup(Thread.currentThread().getContextClassLoader().getResourceAsStream("orientdb/orientdb.config"));
+      server.startup(TestData.getResource("orientdb/orientdb.config"));
 
       // Open th DB
       db = openDb();
