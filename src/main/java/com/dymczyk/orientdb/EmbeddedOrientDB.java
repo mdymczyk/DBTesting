@@ -49,7 +49,7 @@ public class EmbeddedOrientDB {
   }
 
   private static ODatabaseDocumentTx openDb() {
-    System.out.println(TestData.currDir() + "/src/main/resources/orientdb/database");
+    // The DB used will be put in the resources folder under orientdb/database
     ODatabaseDocumentTx db = new ODatabaseDocumentTx("local:"+ TestData.currDir() + "/src/main/resources/orientdb/database");
     if(!db.exists()) {
       db.create();

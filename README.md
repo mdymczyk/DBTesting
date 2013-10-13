@@ -4,7 +4,6 @@ Initially planned for testing:
 
 - OrientDB
 - H2
-- SQLite
 - Cassandra
 - HBase
 - Voldemort (dropped because of no Maven artifact)
